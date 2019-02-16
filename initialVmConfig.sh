@@ -32,6 +32,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 echo "*** Allow Docker without sudo ***"
 sudo groupadd docker
 sudo gpasswd -a $USER docker
+sudo usermod -aG docker $USER
 
 #install oracle jdk
 #FIRST DOWNLOAD THE ORACLE JDK8 x64 RPM AT https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
