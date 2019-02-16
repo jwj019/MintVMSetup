@@ -17,11 +17,11 @@ sudo apt install -y atom
 
 #install docker
 echo "*** Installing Docker ***"
-sudo apt-get install     apt-transport-https     ca-certificates     curl     software-properties-common
+sudo apt-get install -y    apt-transport-https     ca-certificates     curl     software-properties-common
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
 sudo apt update -y
-sudo apt install docker-ce
+sudo apt install -y docker-ce 
 
 #install docker-compose
 echo "*** Installing Docker-Compose ***"
@@ -50,7 +50,7 @@ sudo apt-get install -y nodejs
 echo "*** Installing Yarn ***"
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-sudo apt-get update && sudo apt-get install yarn
+sudo apt-get -y update && sudo apt-get install -y yarn 
 
 #install other npm dependencies
 echo "*** Installing NPM stuff ***"
